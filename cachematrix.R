@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCache 
+## parameters
+##  x - matrix to be stored
 
-## Write a short comment describing this function
+## stores a matrix variable in the parent environment
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -10,10 +11,14 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve
+## parameters
+##  x - a square, invertible matrix
 
+## returns the inverse of a matrix computed using the "solve" routine
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+  
+  ## Return a matrix that is the inverse of 'x'
     
   solve(x)
   
